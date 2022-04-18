@@ -32,13 +32,13 @@
  > You also need to set up an empty project board by choosing the  “Automated kanban with review” option on Github. You should also have a Backlog and In testing columns added.
 
  > * Why is it important or interesting to you?
-   This project is interesting for us because we all have interest in video games and played through turn based games at least once in our life. By being able to          create a project in creating our own text-based RPG game, we're interested in learning how the inside and behind the stage concept for how these games are planned      and executed and what hidden problems and situations we might encounter and resolve through creating our own version.
+ > * This project is interesting for us because we all have interest in video games and played through turn based games at least once in our life. By being able to          create a project in creating our own text-based RPG game, we're interested in learning how the inside and behind the stage concept for how these games are planned      and executed and what hidden problems and situations we might encounter and resolve through creating our own version.
 
  > * What languages/tools/technologies do you plan to use? (This list may change over the course of the project)
  >   * [toolname](link) - Short description
 
  > * What will be the input/output of your project? What are the features that the project provides?
- > The input for our projects will be user's decisions on what ability/move they want to utilize per turn while our output will be a text summary of what occured          after every turn in addition to beginning/endings of events. This project provides features such as classes and attributes/elements that will affect turns/special      interactions between user's characters and opponents. (Ex. Classes with higher speed will attack first; doing fire element damage to grass element opponents will      do 2x damage; etc)
+ > * The input for our projects will be user's decisions on what ability/move they want to utilize per turn while our output will be a text summary of what occured          after every turn in addition to beginning/endings of events. This project provides features such as classes and attributes/elements that will affect turns/special      interactions between user's characters and opponents. (Ex. Classes with higher speed will attack first; doing fire element damage to grass element opponents will      do 2x damage; etc)
 
  > ## Phase II
  > In addition to completing the "Class Diagram" section below, you will need to:
