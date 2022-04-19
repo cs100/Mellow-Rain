@@ -1,14 +1,15 @@
  > As you complete each section you **must** remove the prompt text. Every *turnin* of this project includes points for formatting of this README so keep it clean and keep it up to date. 
  > Prompt text is any lines beginning with "\>"
  > Replace anything between \<...\> with your project specifics and remove angle brackets. For example, you need to name your project and replace the header right below this line with that title (no angle brackets). 
-# Rogues vs Slimes
+# Mellow rain
  > Your author list below should include links to all members GitHub (remove existing author).
  
  > Authors: [Austin Yang](https://github.com/Toona114)
  >          [Zain Ashraf](https://github.com/zain-ashraf)
  >          [Brandon Paulsen](https://github.com/Poly1581)
+ >          [Jimmy Delgado-Hernandez] (https://github.com/Maker424)
  
- > You will be forming a group of **FOUR** students and working on an interesting project. The project has 4 phases, each one with specific requirements. A list of proposed project ideas that have been successful in previous quarters is listed in the project specifications document on Canvas. You can select an idea from the list, start thinking about the features you will implement, what design patterns can help you implement them, and why. If you want to propose your own original idea, you will have to contact an instructor to discuss the project and obtain written permission before you submit your project proposal (Phase 1). Your project needs to implement at least one design pattern iteratively, which you will have to justify in later phases.The project work should be divided almost equally among team members. You can of course help each other, but it needs to be clear who will be responsible for which features. Additionally, you are expected to follow Scrum patterns, specifically the use of a Scrum (Project) board, Sprints, and Scrum meetings. While Daily Scrums are not required we highly encourage you to practice them.
+>You will be forming a group of **FOUR** students and working on an interesting project. The project has 4 phases, each one with specific requirements. A list of proposed project ideas that have been successful in previous quarters is listed in the project specifications document on Canvas. You can select an idea from the list, start thinking about the features you will implement, what design patterns can help you implement them, and why. If you want to propose your own original idea, you will have to contact an instructor to discuss the project and obtain written permission before you submit your project proposal (Phase 1). Your project needs to implement at least one design pattern iteratively, which you will have to justify in later phases.The project work should be divided almost equally among team members. You can of course help each other, but it needs to be clear who will be responsible for which features. Additionally, you are expected to follow Scrum patterns, specifically the use of a Scrum (Project) board, Sprints, and Scrum meetings. While Daily Scrums are not required we highly encourage you to practice them.
 
  
  > ## Expectations
@@ -22,24 +23,9 @@
 
 
 ## Project Description
- > Your project description should summarize the project you are proposing. Be sure to include:
- > * Why is it important or interesting to you?
- > * What languages/tools/technologies do you plan to use? (This list may change over the course of the project)
- >   * [toolname](link) - Short description
- > * What will be the input/output of your project? What are the features that the project provides?
- > 
- > This description should be in enough detail that the TA/instructor can determine the complexity of the project and if it is sufficient for the team members to complete in the time allotted. 
- > 
- > You also need to set up an empty project board by choosing the  “Automated kanban with review” option on Github. You should also have a Backlog and In testing columns added.
-
- > * Why is it important or interesting to you?
- > * This project is interesting for us because we all have interest in video games and played through turn based games at least once in our life. By being able to          create a project in creating our own text-based RPG game, we're interested in learning how the inside and behind the stage concept for how these games are planned      and executed and what hidden problems and situations we might encounter and resolve through creating our own version.
-
- > * What languages/tools/technologies do you plan to use? (This list may change over the course of the project)
- >   * The project will be put together in the programming language of C++. Any additional tools or technologies we implement in the future will be listed as we 
- >     progress.
-   
- > * What will be the input/output of your project? What are the features that the project provides?
+ > Our group project is a text-based RPG game that utilizes only text to interact with the game with no visuals.Our game is called "Mellow Rain", and it is about a greek soldier, who was born with one arm, who grew up to become a soldier to then fight under Alexander the Great on his war conquests.  
+ > * This project is interesting for us because we all have interest in video games and played through turn based games at least once in our life. By being able to create a project in creating our own text-based RPG game, we're interested in learning how the inside and behind the stage concept for how these games are planned and executed and what hidden problems and situations we might encounter and resolve through creating our own version.
+ >   * The project will be put together in the programming language of C++. Any additional tools or technologies we implement in the future will be listed as we progress.
  > * The input for our projects will be user's decisions on what ability/move they want to utilize per turn while our output will be a text summary of what occured          after every turn in addition to beginning/endings of events. This project provides features such as classes and attributes/elements that will affect turns/special      interactions between user's characters and opponents. (Ex. Classes with higher speed will attack first; doing fire element damage to grass element opponents will      do 2x damage; etc)
 
  > ## Phase II
