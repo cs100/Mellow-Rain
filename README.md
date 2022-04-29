@@ -1,7 +1,7 @@
 # Mellow rain
- > Authors: [Austin Yang](https://github.com/Toona114)
- >          [Zain Ashraf](https://github.com/zain-ashraf)
- >          [Brandon Paulsen](https://github.com/Poly1581)
+ > Authors: [Austin Yang](https://github.com/Toona114),
+ >          [Zain Ashraf](https://github.com/zain-ashraf),
+ >          [Brandon Paulsen](https://github.com/Poly1581),
  >          [Jimmy Delgado-Hernandez](https://github.com/Maker424)
 
 ## Project Description
