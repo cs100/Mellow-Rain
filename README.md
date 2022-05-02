@@ -11,19 +11,35 @@
  > The input for our projects will be user's decisions on what ability/move they want to utilize per turn while our output will be a text summary of what occured          after every turn in addition to beginning/endings of events. This project provides features such as classes and attributes/elements that will affect turns/special      interactions between user's characters and opponents. (Ex. Classes with higher speed will attack first; doing fire element damage to grass element opponents will      do 2x damage; etc)
 
  > ## Phase II
- > In addition to completing the "Class Diagram" section below, you will need to:
- > * Create an "Epic" (note) for each feature. Place these epics in the `Backlog` column
- > * Complete your first *sprint planning* meeting to plan out the next 7 days of work.
- >   * Break down the "Epics" into smaller actionable user stories (i.e. smaller development tasks). Convert them into issues and assign them to team members. Place these in the `TODO` column.
- >   * These cards should represent roughly 7 days worth of development time for your team, taking you until your first meeting with the TA
- > * Schedule two check-ins using Calendly. You need to pick both time slots during your lab on week 6. Your entire team must be present for both check-ins.
- >   * The first check-in needs to be scheduled with your lab TA. During that meeting, you will discuss your project design/class diagram from phase II.
- >   * The second check-in should be scheduled with a reader. During that meeting you will discuss:
- >     * The tasks you are planning for the first sprint
- >     * How work will be divided between the team members
-
 ## Class Diagram
- > Include a **class diagram(s)** for your project and a **description** of the diagram(s). Your class diagram(s) should include all the main classes you plan for the project. This should be in sufficient detail that another group could pick up the project this point and successfully complete it. Use proper UML notation (as discussed in the course slides).
+![image](https://cdn.discordapp.com/attachments/961506732679503932/970381260721647726/Screenshot_2022-05-01_104736.jpg)
+
+## Class Description
+As a player, I want to choose a character so I can play as them throughout the game.
+As a player, I want to be given a list of 4 character options to pick from and play as throughout the game.
+.
+As a player, I want to access my inventory to arrange my items.
+As a player, I want to be able to see the items in my inventory.
+As a player, I want to be able to interact with the items in my inventory.
+As a player, I want to be able to move items around in my inventory.
+
+As a player, I want to equip armor so I can defend myself.
+As a player, I want to be able to compare armor statistics so I can choose which armor to pick.
+
+As a player, I want to use a healing item so I can have more health.
+As a player, I want to eat a potato to increase my health.
+As a player, I want to be able to compare statistics between food items so I can pick which one will benefit me the most.
+
+As a player, I want to equip a weapon so I can attack others.
+As a player, I want to be able to see how much damage each weapon can do so I can choose one to attack others.
+As a player, I want to be given a list of weapon options to choose from in my inventory so I can choose one to attack others.
+
+As a player, I want to attack my enemy so I can decrease their health
+As a player, I want to be given a list of different type of attacking interactions I can choose from so I can decrease an enemy’s health.
+
+As a player, I want to guard myself so I can avoid damage.
+As a player, I want to be given an option to block an attack so I can avoid damage.
+As a player, I want to be given the option to run away so I can avoid damage.
  
  > ## Phase III
  > You will need to schedule a check-in for the second scrum meeting with the same reader you had your first scrum meeting with (using Calendly). Your entire team must be present. This meeting will occur on week 8 during lab time.
