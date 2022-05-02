@@ -12,7 +12,7 @@
 
  > ## Phase II
 ## Class Diagram
-![image](https://cdn.discordapp.com/attachments/961506732679503932/970381260721647726/Screenshot_2022-05-01_104736.jpg)
+![image](https://cdn.discordapp.com/attachments/961506732679503932/970524029964394506/unknown.png)
 
 ## Class Description
 As a player, I want to choose a character so I can play as them throughout the game.
