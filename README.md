@@ -40,6 +40,59 @@ As a player, I want to be given a list of different type of attacking interactio
 As a player, I want to guard myself so I can avoid damage.
 As a player, I want to be given an option to block an attack so I can avoid damage.
 As a player, I want to be given the option to run away so I can avoid damage.
+
+More in-depth
+Ideas:
+Character
+Class/Attributes
+Inventory (vector of items)
+different types of characters
+Enemies
+Slime (small med large) (color = attributes)				`````````````````````````````````````````
+
+Actions
+->Attack
+->Guard (if there’s time)
+			->Guard reduce 25% but u can do action as well?
+				->Don’t want to do 100% damage education because that would just make it so you can just defend 24/7
+				->Don’t want to do just damage education because you’ll just want to attack no matter what then
+				->Can resolve by making defense stack just like a pokemon battle?
+->View inventory
+->Use items (healing most likely)
+->Access weapon/armor
+->Run
+
+
+Items
+Healing (food) (least -> greatest healing amount) 
+->(Flat base 20, increment of 5?)
+Cookie
+Apple
+Bread
+Potato
+Steak
+Weapons
+->Each one has its own attribute/element that allows it to have modified damage/effect to enemies based on the enemy’s attribute/element
+Sword
+Stick
+Fist
+Bows
+Axes
+Armor
+	->Each one will be weakest to strongest
+	->Modified damage taken based on what the enemy’s attribute is
+		**Element Game is fire vs water
+		->Element game lost
+ damage taken = base damage - armorType(%) + element (10% flat)
+->Element game won
+damage taken = base damage - armorType(%) = element (10% flat)
+
+Leather (10% damage reduction)
+Copper (15% damage reduction)
+Steel (20% damage reduction)
+Titanium (25% damage reduction)
+
+Each person will choose a class to start off with (left side of UML) and each person will have their inventory which can access items such as healing, armor, and weapons (right side of UML). Each class will have their own unique stats along side different items having different stats such as how much it heals for healing items, durability and resistance for armor, and damage for weapons.
  
  > ## Phase III
  > You will need to schedule a check-in for the second scrum meeting with the same reader you had your first scrum meeting with (using Calendly). Your entire team must be present. This meeting will occur on week 8 during lab time.
