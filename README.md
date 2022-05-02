@@ -48,7 +48,7 @@ Class/Attributes
 Inventory (vector of items)
 different types of characters
 Enemies
-Slime (small med large) (color = attributes)				`````````````````````````````````````````
+Slime (small med large) (color = attributes)			
 
 Actions
 ->Attack
