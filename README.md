@@ -10,7 +10,7 @@
  > The project will be put together in the programming language of C++. Any additional tools or technologies we implement in the future will be listed as we progress.
  > The input for our projects will be user's decisions on what ability/move they want to utilize per turn while our output will be a text summary of what occured          after every turn in addition to beginning/endings of events. This project provides features such as classes and attributes/elements that will affect turns/special      interactions between user's characters and opponents. (Ex. Classes with higher speed will attack first; doing fire element damage to grass element opponents will      do 2x damage; etc)
 
- > ## Phase II
+ ## Phase II
 ## Class Diagram
 ![image](https://cdn.discordapp.com/attachments/961506732679503932/970525213680877648/unknown.png)
 
@@ -94,13 +94,18 @@ Titanium (25% damage reduction)
 
 Each person will choose a class to start off with (left side of UML) and each person will have their inventory which can access items such as healing, armor, and weapons (right side of UML). Each class will have their own unique stats along side different items having different stats such as how much it heals for healing items, durability and resistance for armor, and damage for weapons.
  
- > ## Phase III
+ ## Phase III
+ ## Design Pattern: 
+Composite Pattern
+We will use Composite Pattern in our "Decision making" class. Character will be able to do different option (attack, block, heal). For our block, we plan to make it so the character recieves less damage and gains a bit of HP back. By utilizing Composite Pattern, these "multi-effect" actions can be possible.
+
  > You will need to schedule a check-in for the second scrum meeting with the same reader you had your first scrum meeting with (using Calendly). Your entire team must be present. This meeting will occur on week 8 during lab time.
  > * Before the meeting you should perform a sprint plan like you did in Phase II.
  > * You should also update this README file by adding the following:
  >   * What design pattern(s) did you use? For each pattern you must explain in 4-5 sentences:
  >     * Why did you pick this pattern? And what feature did you implement with it?
  >     * How did the design pattern help you write better code?
+ >     
  >   * An updated class diagram that reflects the design pattern(s) you used. You may combine multiple design patterns into one diagram if you'd like, but it needs to be clear which portion of the diagram represents which design pattern (either in the diagram or in the description).
  >   * Make sure your README file (and Project board) are up-to-date reflecting the current status of your project. Previous versions of the README file should still be visible through your commit history.
 > 
