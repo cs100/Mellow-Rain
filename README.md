@@ -113,9 +113,15 @@ We will use Composite Pattern in our "Decision making" class. Character will be 
 > 
 > During the meeting with your reader you will discuss: 
  > * How effective your last sprint was (each member should talk about what they did)
+ > 	- Jimmy created the main and character files.
+ > 	- Brandon is in the process of creating attack, block, and heal actions.
+ > 	- Austin and Zain are working together to create the move interface/class.
  > * Any tasks that did not get completed last sprint, and how you took them into consideration for this sprint
+ > 	- Last sprint we were focusing more on breaking down the project into smaller pieces and thinking about how to design/code it well. This sprint we built off 		the simplifications we made and started implementing into actual code.
  > * Any bugs you've identified and created issues for during the sprint. Do you plan on fixing them in the next sprint or are they lower priority?
+ > 	- We haven't ran into many issues just yet considering our focus was directed more towards the pre-design aspect.
  > * What tasks you are planning for this next sprint.
+ > 	- Bring together and integrate all the classes.
 
  
  > ## Final deliverable
