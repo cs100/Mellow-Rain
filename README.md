@@ -5,7 +5,7 @@
  >          [Jimmy Delgado-Hernandez](https://github.com/Maker424)
 
 ## Project Description
- > Our group project is a text-based RPG game that utilizes only text to interact with the game with no visuals.Our game is called "Mellow Rain", and it is about a greek soldier, who was born with one arm, who grew up to become a soldier to then fight under Alexander the Great on his war conquests. He will be in a scout brigade with 3 others in his party and will usually fight alone or alongside the party against other small groups of soldiers.  
+ > Our group project is a text-based RPG game that utilizes only text to interact with the game with no visuals. Our game is called "Mellow Rain", and it is about a greek soldier, who was born with one arm, who grew up to become a soldier to then fight under Alexander the Great on his war conquests. He will be in a scout brigade with 3 others in his party and will usually fight alone or alongside the party against other small groups of soldiers.  
  > This project is interesting for us because we all have interest in video games and played through turn based games at least once in our life. By being able to create a project in creating our own text-based RPG game, we're interested in learning how the inside and behind the stage concept for how these games are planned and executed and what hidden problems and situations we might encounter and resolve through creating our own version.
  > The project will be put together in the programming language of C++. Any additional tools or technologies we implement in the future will be listed as we progress.
  > The input for our projects will be user's decisions on what ability/move they want to utilize per turn while our output will be a text summary of what occured          after every turn in addition to beginning/endings of events. This project provides features such as classes and attributes/elements that will affect turns/special      interactions between user's characters and opponents. (Ex. Classes with higher speed will attack first; doing fire element damage to grass element opponents will      do 2x damage; etc)
@@ -104,7 +104,9 @@ We will use Composite Pattern in our "Decision making" class. Character will be 
  > * You should also update this README file by adding the following:
  >   * What design pattern(s) did you use? For each pattern you must explain in 4-5 sentences:
  >     * Why did you pick this pattern? And what feature did you implement with it?
+ >     		- We picked the Strategy design pattern to make our lives easier in the long run. We have strategies and want to be able to implement them easily without extending our program.
  >     * How did the design pattern help you write better code?
+		- Strategy (behavioral) design pattern - We don't actually have to write out multiple functions, we can just write multiple classes to change the behavior and add different moves if necessary (as just a class). If we change any of the methods, we dont have to recomiple the entire program, just that one class.
  >     
  >   * An updated class diagram that reflects the design pattern(s) you used. You may combine multiple design patterns into one diagram if you'd like, but it needs to be clear which portion of the diagram represents which design pattern (either in the diagram or in the description).
  >   * Make sure your README file (and Project board) are up-to-date reflecting the current status of your project. Previous versions of the README file should still be visible through your commit history.
