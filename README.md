@@ -12,7 +12,7 @@
 
  ## Phase II
 ## Class Diagram
-![image](https://cdn.discordapp.com/attachments/961506732679503932/975562857242566696/Image-1.jpg)
+![image]([https://cdn.discordapp.com/attachments/961506732679503932/976251185893900328/Copy_of_project_UML.jpeg])
 
 
 
