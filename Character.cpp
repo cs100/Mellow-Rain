@@ -33,12 +33,12 @@ double Character::getMaxHealth() {
     return maxHealth;
 };
 
-double Character::increaseHealth(double h) {
-    health = max(maxHealth, health+h);
+void Character::increaseHealth(double h) {
+    health = min(maxHealth, health+h);
 };
 
-double Character::decreaseHealth(double h) {
-    health = min(0.0, health-h);
+void Character::decreaseHealth(double h) {
+    health = max(0.0, health-h);
 };
 
 bool Character::isAlive(void) {
