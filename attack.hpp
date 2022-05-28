@@ -1,6 +1,7 @@
 #ifndef ATTACK_HPP
 #define ATTACK_HPP
 
+#include "Character.h"
 #include <random>
 #include <cmath>
 
@@ -10,14 +11,10 @@ class attack {
 	private:
 		double minAttack;
 		double maxAttack;
-		double randAttack(void) {
-			double value = (double)rand();
-			value = fmod(value,(maxAttack-minAttack));
-			value+= minAttack;
-			return value;
-		}
+		double randAttack(void);
 	public:
 		attack(double min, double max) : minAttack(min), maxAttack(max) {};
+		void execute(Character* attacker, Character* defender);
 };
 
 #endif //ATTACK_HPP

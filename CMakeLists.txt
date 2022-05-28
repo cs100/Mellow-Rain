@@ -7,6 +7,6 @@ add_subdirectory(googletest)
 
 add_executable(CS100_Project main.cpp Character.cpp Character.h)
 
-add_executable(test test.cpp Character.h Character.cpp attack.hpp)
+add_executable(test test.cpp Character.h Character.cpp attack.hpp attack.cpp)
 
 target_link_libraries(test gtest)
