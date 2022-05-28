@@ -15,8 +15,8 @@ public:
     int getAge();
     double getHealth(void);
     double getMaxHealth(void);
-    double increaseHealth(double h);
-    double decreaseHealth(double h);
+    void increaseHealth(double h);
+    void decreaseHealth(double h);
     bool isAlive(void);
     bool isDead(void);
 private:
@@ -24,7 +24,6 @@ private:
     int age;
     double health;
     double maxHealth;
-
 };
 
 
