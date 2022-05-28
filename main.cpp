@@ -16,12 +16,11 @@ int main() {
         cout << "Error:Age not in Range." << "\n";
         cout << "choose an age between 18-60: " << "\n";
         cin >> age;
-
     }
 
     cout << "\n";
 
-    Character* OgCharacter = new Character(name, age);
+    Character* OgCharacter = new Character(name, age, 100);
 
     cout << "welcome " << OgCharacter->getName() << " who's " << OgCharacter->getAge() << " years old!" << "\n";
 

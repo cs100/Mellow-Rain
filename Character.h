@@ -10,12 +10,20 @@ using namespace std;
 class Character {
 public:
     Character();
-    Character(string, int);
+    Character(string n, int a, double h);
     string getName();
     int getAge();
+    double getHealth(void);
+    double getMaxHealth(void);
+    double increaseHealth(double h);
+    double decreaseHealth(double h);
+    bool isAlive(void);
+    bool isDead(void);
 private:
     string name;
     int age;
+    double health;
+    double maxHealth;
 
 };
 
