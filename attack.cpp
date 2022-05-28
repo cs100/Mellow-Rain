@@ -3,13 +3,13 @@
 
 using namespace std;
 
-double attack::randAttack(void) {
+double Attack::randAttack(void) {
 	double value = (double)rand();
 	value = fmod(value,(maxAttack-minAttack));
 	value+= minAttack;
 	return value;
 }
 
-void attack::execute(Character* attacker, Character* defender) {
+void Attack::execute(Character* defender) {
 	defender->decreaseHealth(randAttack());
 }
