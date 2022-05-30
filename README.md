@@ -98,8 +98,8 @@ Each person will choose a class to start off with (left side of UML) and each pe
  
  ## Phase III
  ## Design Pattern: 
-Composite Pattern
-We will use Composite Pattern in our "Decision making" class. Character will be able to do different option (attack, block, heal). For our block, we plan to make it so the character recieves less damage and gains a bit of HP back. By utilizing Composite Pattern, these "multi-effect" actions can be possible.
+Strategy Pattern
+We will use Strategy Pattern in our "Decision making" class. Character will be able to do different option (attack, block, heal). For our block, we plan to make it so the character recieves less damage and gains a bit of HP back. By utilizing Composite Pattern, these "multi-effect" actions can be possible.
 
  > You will need to schedule a check-in for the second scrum meeting with the same reader you had your first scrum meeting with (using Calendly). Your entire team must be present. This meeting will occur on week 8 during lab time.
  > * Before the meeting you should perform a sprint plan like you did in Phase II.
