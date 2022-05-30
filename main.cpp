@@ -1,5 +1,5 @@
 #include "Character.h"
-#include "TextDisplay.h"
+#include "TextDisplay.hpp"
 #include "attack.hpp"
 #include "attackRange.hpp"
 #include "attackValue.hpp"
