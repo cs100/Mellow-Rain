@@ -1,20 +1,13 @@
 #ifndef ATTACK_HPP
 #define ATTACK_HPP
 
-#include "Character.h"
-#include <random>
-#include <cmath>
-
 using namespace std;
 
-class attack {
-	private:
-		double minAttack;
-		double maxAttack;
-		double randAttack(void);
+class Character;
+
+class Attack {
 	public:
-		attack(double min, double max) : minAttack(min), maxAttack(max) {};
-		void execute(Character* attacker, Character* defender);
+		virtual void execute(Character* defender) = 0;
 };
 
 #endif //ATTACK_HPP

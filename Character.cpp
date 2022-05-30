@@ -1,5 +1,8 @@
 #include "Character.h"
+#include "attack.hpp"
+#include "heal.hpp"
 #include <algorithm>
+#include <iostream>
 
 using namespace std;
 
@@ -8,13 +11,17 @@ Character::Character() {
     age = 0;
     maxHealth = 1;
     health = 1;
+    attackObject = nullptr;
+    healObject = nullptr;
 }
 
-Character::Character(string n, int a, double h) {
-    name = n;
-    age = a;
-    maxHealth = h;
-    health = h;
+Character::Character(string _name, int _age, double _health) {
+    name = _name;
+    age = _age;
+    maxHealth = _health;
+    health = _health;
+    attackObject = nullptr;
+    healObject = nullptr;
 }
 
 string Character::getName() {
@@ -48,3 +55,27 @@ bool Character::isAlive(void) {
 bool Character::isDead(void) {
     return health == 0;
 };
+
+void Character::setAttack(Attack* _attack) {
+    attackObject = _attack;
+}
+
+void Character::attack(Character* defender) {
+    if(attackObject == nullptr) {
+        cout << "NO ATTACK INITIALIZED" << endl;
+        return;
+    }
+    attackObject->execute(defender);
+}
+
+void Character::setHeal(Heal* _heal) {
+    healObject = _heal;
+}
+
+void Character::heal(void) {
+    if(healObject == nullptr) {
+        cout << "HO HEAL INITIALIZED" << endl;
+        return;
+    }
+    healObject->execute(this);
+}

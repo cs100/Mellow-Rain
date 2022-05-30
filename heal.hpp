@@ -1,25 +1,13 @@
 #ifndef HEAL_HPP
 #define HEAL_HPP
 
-#include "Character.h"
-
 using namespace std;
 
+class Character;
+
 class Heal {
-private:
-	 double amountToHeal;
-
-public:
-
-	// Heal()
-	Heal(Character* n, double a) 
-	{
-		amountToHeal = a;
-		n->increaseHealth(amountToHeal);	
-	}
-
+	public:
+		virtual void execute(Character* toHeal) = 0;
 };
-
-
 
 #endif // HEAL_HPP
