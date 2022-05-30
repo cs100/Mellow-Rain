@@ -24,15 +24,6 @@ Character::Character(string _name, int _age, double _health) {
     healObject = nullptr;
 }
 
-Character::Character(string _name, int _age, double _health, double _minattack, double _maxattack, double _amountToHeal) {
-    name = _name;
-    age = _age;
-    maxHealth = _health;
-    health = _health;
-    attackObject = new Attack(_minattack, _maxattack);
-    healObject = new Heal(_amountToHeal);
-}
-
 string Character::getName() {
     return name;
 }
@@ -65,12 +56,20 @@ bool Character::isDead(void) {
     return health == 0;
 };
 
+void Character::setAttack(Attack* _attack) {
+    attackObject = _attack;
+}
+
 void Character::attack(Character* defender) {
     if(attackObject == nullptr) {
         cout << "NO ATTACK INITIALIZED" << endl;
         return;
     }
     attackObject->execute(defender);
+}
+
+void Character::setHeal(Heal* _heal) {
+    healObject = _heal;
 }
 
 void Character::heal(void) {

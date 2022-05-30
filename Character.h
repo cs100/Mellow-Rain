@@ -13,7 +13,6 @@ class Character {
 public:
     Character();
     Character(string _name, int _age, double _health);
-    Character(string _name, int _age, double _health, double _minattack, double _maxattack, double _amountToHeal);
     string getName();
     int getAge();
     double getHealth(void);
@@ -22,7 +21,9 @@ public:
     void decreaseHealth(double h);
     bool isAlive(void);
     bool isDead(void);
+    void setAttack(Attack* _attack);
     void attack(Character* defender);
+    void setHeal(Heal* _heal);
     void heal(void);
 private:
     string name;

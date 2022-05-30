@@ -4,17 +4,10 @@
 using namespace std;
 
 class Character;
+
 class Heal {
-private:
-	 double amountToHeal;
-
-public:
-
-	// Heal()
-	Heal(double a) : amountToHeal(a) {};
-	void execute(Character* toHeal);
+	public:
+		virtual void execute(Character* toHeal) = 0;
 };
-
-
 
 #endif // HEAL_HPP
