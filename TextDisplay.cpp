@@ -35,7 +35,7 @@ void TextDisplay::BeginGameTxt() {
     cout << "(" << person->getName() << " has moved to position to fight)" << "\n" << "\n";
 
     cout << "When you are in a battle against an enemy, you can input 1 of 5 numbers as choices for your next move:" << "\n";
-    cout << "0: Quit" << "1: Attack" << "\n" << "2: Block" << "\n" << "3: Heal" << "\n" << "4: Show stats" << "\n" << "\n";
+    cout << "0: Quit" << "\n" <<  "1: Attack" << "\n" << "2: Block" << "\n" << "3: Heal" << "\n" << "4: Show stats" << "\n" << "\n";
 
     cout << "lets show your stats by typing 4 as your input" << "\n";
     cin >> chVal;
