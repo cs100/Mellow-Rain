@@ -4,6 +4,10 @@ TextDisplay::TextDisplay() {
     txt = "";
 }
 
+TextDisplay::~TextDisplay() {
+    delete person;
+}
+
 void TextDisplay::BeginGameTxt() {
     string name;
     int age = 0;

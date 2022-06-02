@@ -11,6 +11,7 @@ using namespace std;
 class TextDisplay {
 public:
     TextDisplay();
+    ~TextDisplay();
     void BeginGameTxt();
     void FirstBoss();
     void SecondBoss();
