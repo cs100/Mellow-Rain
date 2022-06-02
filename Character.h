@@ -12,6 +12,7 @@ using namespace std;
 class Character {
 public:
     Character();
+    ~Character();
     Character(string _name, int _age, double _health);
     string getName();
     int getAge();
