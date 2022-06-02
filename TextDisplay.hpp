@@ -15,11 +15,19 @@ public:
     void BeginGameTxt();
     void FirstBoss();
     void SecondBoss();
-    void FinalBoss();
+    void FinalBoss();;
     void MenuChoice(int chVal);
-
 private:
-    Character* person;
+    bool BossIsAlive(void);
+    bool PlayerIsAlive(void);
+    void PrintMenu(void);
+    int GetPlayerMove(void);
+    void FightSequence(void);
+    void Turn(bool playerTurn);
+    void PlayerTurn(void);
+    void BossTurn(void);
+	Character* boss = nullptr;
+    Character* person = nullptr;
     string txt;
 };
 

@@ -46,6 +46,7 @@ void Character::increaseHealth(double h) {
 
 void Character::decreaseHealth(double h) {
     health = max(0.0, health-h);
+    cout << " did " << h << " damage to " << getName() << endl;
 };
 
 bool Character::isAlive(void) {
@@ -61,12 +62,15 @@ void Character::setAttack(Attack* _attack) {
 }
 
 void Character::attack(Character* defender) {
+    cout << getName() << " attacks " << defender->getName() << endl;
     if(attackObject == nullptr) {
         cout << "NO ATTACK INITIALIZED" << endl;
         return;
     }
+    cout << getName();
     attackObject->execute(defender);
-}
+    cout << defender->getName() << " has " << defender->getHealth() << " left" << endl << endl; 
+ }
 
 void Character::setHeal(Heal* _heal) {
     healObject = _heal;
