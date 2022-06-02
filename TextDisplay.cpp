@@ -55,7 +55,7 @@ void TextDisplay::BeginGameTxt() {
 }
 
 void TextDisplay::FirstBoss() {
-
+    
 };
 
 void TextDisplay::SecondBoss() {

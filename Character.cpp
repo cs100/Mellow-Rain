@@ -45,7 +45,11 @@ void Character::increaseHealth(double h) {
 };
 
 void Character::decreaseHealth(double h) {
+    if(isBlocking()) {
+        h = blockingDamage*h;
+    }
     health = max(0.0, health-h);
+    blocking = false;
 };
 
 bool Character::isAlive(void) {
@@ -66,6 +70,7 @@ void Character::attack(Character* defender) {
         return;
     }
     attackObject->execute(defender);
+    blocking = false;
 }
 
 void Character::setHeal(Heal* _heal) {
@@ -78,4 +83,25 @@ void Character::heal(void) {
         return;
     }
     healObject->execute(this);
+    blocking = false;
+}
+
+void Character::block(void) {
+    blocking = true;
+}
+
+bool Character::isBlocking(void) {
+    return blocking;
+}
+
+void Character::setBlockingDamage(double _blockingDamage) {
+    if(_blockingDamage <= 0.0 || _blockingDamage >= 1.0) {
+        cout << "INVALID BLOCKING DAMAGE" << endl;
+        return;
+    }
+    blockingDamage = _blockingDamage;
+}
+
+double Character::getBlockingDamage(void) {
+    return blockingDamage;
 }
