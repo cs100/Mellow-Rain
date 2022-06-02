@@ -15,6 +15,15 @@ Character::Character() {
     healObject = nullptr;
 }
 
+Character::~Character() {
+    if(attackObject != nullptr) {
+        delete attackObject;
+    }
+    if(healObject != nullptr) {
+        delete healObject;
+    }
+}
+
 Character::Character(string _name, int _age, double _health) {
     name = _name;
     age = _age;
