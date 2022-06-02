@@ -7,9 +7,11 @@ TextDisplay::TextDisplay() {
 TextDisplay::~TextDisplay() {
 
 	if (person != nullptr){
-	delete person;
-}
-
+	   delete person;
+    }
+    if (boss != nullptr) {
+        delete boss;
+    }
 }
 
 void TextDisplay::BeginGameTxt() {
