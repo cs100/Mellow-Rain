@@ -5,7 +5,11 @@ TextDisplay::TextDisplay() {
 }
 
 TextDisplay::~TextDisplay() {
-    delete person;
+
+	if (person != nullptr){
+	delete person;
+}
+
 }
 
 void TextDisplay::BeginGameTxt() {
@@ -17,7 +21,7 @@ void TextDisplay::BeginGameTxt() {
     cin >>  name;
     cout << "\n";
 
-    cout << "Type your Age: ";
+    cout << "Type your Age (between 18-60): ";
     cin >> age;
 
     while (age < 18 || age > 60) {
@@ -64,15 +68,19 @@ void TextDisplay::MenuChoice(int chVal) {
     if (chVal != 0) {
         while (chVal != 0) {
             if (chVal == 1) {
+		// attack
 
             }
             else if (chVal == 2) {
+		// block
 
             }
             else if (chVal == 3) {
+		// heal
 
             }
             else if (chVal == 4) {
+		// show stats
 
             }
         }
