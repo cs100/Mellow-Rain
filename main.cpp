@@ -6,10 +6,14 @@
 #include "heal.hpp"
 #include "healRange.hpp"
 #include "healValue.hpp"
+#include <stdlib.h>
+#include <time.h>
+
+using namespace std;
 
 int main() {
     TextDisplay Gamer;
-
+    srand(time(NULL));
     Gamer.BeginGameTxt();
 
     return 0;
