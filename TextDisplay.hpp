@@ -17,8 +17,10 @@ public:
     void SecondBoss();
     void FinalBoss();
     void MenuChoice(int chVal);
-
+    bool BossIsAlive(void);
+    bool PlayerIsAlive(void);
 private:
+	Character* boss;
     Character* person;
     string txt;
 };

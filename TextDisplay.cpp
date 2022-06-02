@@ -96,3 +96,11 @@ void TextDisplay::MenuChoice(int chVal) {
         cout << "Thank you for playing Mellow Rain!";
     }
 }
+
+bool TextDisplay::BossIsAlive(void) {
+    return (boss!=nullptr)&&(boss->isAlive());
+}
+
+bool TextDisplay::PlayerIsAlive(void) {
+    return (person!=nullptr)&&(person->isAlive());
+}
