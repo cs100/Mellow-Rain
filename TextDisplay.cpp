@@ -54,11 +54,17 @@ void TextDisplay::BeginGameTxt() {
     cout << "You can progressively make your character stronger by winning your battles to increase your health and attack." << "\n";
 }
 
-void TextDisplay::FirstBoss();
+void TextDisplay::FirstBoss() {
 
-void TextDisplay::SecondBoss();
+};
 
-void TextDisplay::FinalBoss();
+void TextDisplay::SecondBoss() {
+
+};
+
+void TextDisplay::FinalBoss() {
+    
+};
 
 void TextDisplay::MenuChoice(int chVal) {
     if (chVal != 0) {
