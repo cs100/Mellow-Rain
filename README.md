@@ -65,10 +65,10 @@ Strategy Pattern
  
  ## Screenshots
  > Screenshots of the input/output after running your application
- > ![p1](https://cdn.discordapp.com/attachments/961506732679503932/982116806653267988/1.JPG)
- > ![p2](https://cdn.discordapp.com/attachments/961506732679503932/982116806875561994/2.JPG)
- > ![p3](https://cdn.discordapp.com/attachments/961506732679503932/982116807156572170/3.JPG)
- > ![p4](https://cdn.discordapp.com/attachments/961506732679503932/982116807450189824/4.JPG)
+  ![p1](https://cdn.discordapp.com/attachments/961506732679503932/982116806653267988/1.JPG)
+  ![p2](https://cdn.discordapp.com/attachments/961506732679503932/982116806875561994/2.JPG)
+  ![p3](https://cdn.discordapp.com/attachments/961506732679503932/982116807156572170/3.JPG)
+  ![p4](https://cdn.discordapp.com/attachments/961506732679503932/982116807450189824/4.JPG)
  ## Installation/Usage
  > Instructions on installing and running your application
  ## Testing
