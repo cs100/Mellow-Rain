@@ -12,7 +12,7 @@ This project is interesting for us because we all have interest in video games a
 
  ## Phase II
 ## Class Diagram
-![Copy of project UML-2](https://user-images.githubusercontent.com/66814336/171773256-10761952-e149-49f7-b54c-74179aa5bc32.png)
+![Copy of project UML-2](https://cdn.discordapp.com/attachments/961506732679503932/982399399135162488/Copy_of_project_UML.jpeg)
 
 
 
@@ -65,14 +65,6 @@ Strategy Pattern
 >We will use Strategy Pattern so we can have one main class where we call other functions to create the flow of the game. By utilizing Strategy Pattern, we are able to modify individuals functions (attack, heal, and blocking) to do different things when it's called by main.
 -We picked the Strategy design pattern to make our lives easier in the long run. We have strategies and want to be able to implement them easily without extending our program.
  -Strategy (behavioral) design pattern - We don't actually have to write out multiple functions, we can just write multiple classes to change the behavior and add different moves if necessary (as just a class). If we change any of the methods, we dont have to recomiple the entire program, just that one class.
-
- 
- > ## Final deliverable
- > All group members will give a demo to the TA/reader during lab time. The TA/reader will check the demo and the project GitHub repository and ask a few questions to all the team members. 
- > Before the demo, you should do the following:
- > * Complete the sections below (i.e. Screenshots, Installation/Usage, Testing)
- > * Plan one more sprint (that you will not necessarily complete before the end of the quarter). Your In-progress and In-testing columns should be empty (you are not doing more work currently) but your TODO column should have a full sprint plan in it as you have done before. This should include any known bugs (there should be some) or new features you would like to add. These should appear as issues/cards on your Project board.
- > * Make sure your README file and Project board are up-to-date reflecting the current status of your project (e.g. any changes that you have made during the project such as changes to your class diagram). Previous versions should still be visible through your commit history. 
  
  ## Screenshots
   ![p1](https://cdn.discordapp.com/attachments/961506732679503932/982116806653267988/1.JPG)
