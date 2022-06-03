@@ -73,5 +73,5 @@ To run the game, clone the repository and compile with Cmake3 ., make, then ./CS
 To play the game, you'll first have to input a name and an appropriate age. Afterwards you choose moves to either attack, block, or heal to defeat 3 bosses. If you want to give up mid game, you can press 0 to give up.
 
  ## Testing
- > How was your project tested/validated? If you used CI, you should have a "build passing" badge in this README.
+We have tested all of our functions and classes to see if they work properly in order to prevent any bugs or problems to occur while calling the different functions.
  
