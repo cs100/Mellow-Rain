@@ -195,7 +195,7 @@ void TextDisplay::PlayerTurn(void) {
     } else if(choice == 1) {
         person->attack(boss);
     } else if(choice == 2) {
-        //  BLOCK
+        person->block();
     } else if(choice == 3) {
         person->heal();
     } else if(choice == 4) {
