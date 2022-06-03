@@ -12,7 +12,8 @@ This project is interesting for us because we all have interest in video games a
 
  ## Phase II
 ## Class Diagram
-![uml final project](https://user-images.githubusercontent.com/66814336/170804226-f879af09-7b1c-45ac-b0fd-51f78d4dcb08.jpg)
+![Copy of project UML-2](https://user-images.githubusercontent.com/66814336/171773256-10761952-e149-49f7-b54c-74179aa5bc32.png)
+
 
 
 
