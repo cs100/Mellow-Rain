@@ -12,7 +12,7 @@ This project is interesting for us because we all have interest in video games a
 
  ## Phase II
 ## Class Diagram
-![Copy of project UML-2](https://cdn.discordapp.com/attachments/961506732679503932/982399399135162488/Copy_of_project_UML.jpeg)
+![Copy of project UML-2](https://cdn.discordapp.com/attachments/961506732679503932/982401685936812082/Copy_of_project_UML.jpeg)
 
 
 
