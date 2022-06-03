@@ -120,6 +120,7 @@ double Character::getBlockingDamage(void) {
 }
 
 void Character::showStats(void) {
+    cout << "-------------------" << "\n";
     cout << "\t\t" << name << " Stats" << endl;
     cout << "Age: " << age << endl;
     cout << "Health: " << health << endl;
@@ -131,4 +132,5 @@ void Character::showStats(void) {
     if(healObject != nullptr) {
         healObject->showStats();
     }
+    cout << "-------------------" << "\n";
 }
