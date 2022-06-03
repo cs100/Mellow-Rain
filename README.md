@@ -99,31 +99,9 @@ Each person will choose a class to start off with (left side of UML) and each pe
  ## Phase III
  ## Design Pattern: 
 Strategy Pattern
-We will use Strategy Pattern in our "Decision making" class. Character will be able to do different option (attack, block, heal). For our block, we plan to make it so the character recieves less damage and gains a bit of HP back. By utilizing Composite Pattern, these "multi-effect" actions can be possible.
-
- > You will need to schedule a check-in for the second scrum meeting with the same reader you had your first scrum meeting with (using Calendly). Your entire team must be present. This meeting will occur on week 8 during lab time.
- > * Before the meeting you should perform a sprint plan like you did in Phase II.
-  * You should also update this README file by adding the following:
-    * What design pattern(s) did you use? For each pattern you must explain in 4-5 sentences:
-    	 How did you pick this pattern? And what feature did you implement with it?
-   		-We picked the Strategy design pattern to make our lives easier in the long run. We have strategies and want to be able to implement them easily without extending our program.
-   	 How did the design pattern help you write better code?
- 		-Strategy (behavioral) design pattern - We don't actually have to write out multiple functions, we can just write multiple classes to change the behavior and add different moves if necessary (as just a class). If we change any of the methods, we dont have to recomiple the entire program, just that one class.
- 
- >   * An updated class diagram that reflects the design pattern(s) you used. You may combine multiple design patterns into one diagram if you'd like, but it needs to be clear which portion of the diagram represents which design pattern (either in the diagram or in the description).
- >   * Make sure your README file (and Project board) are up-to-date reflecting the current status of your project. Previous versions of the README file should still be visible through your commit history.
-> 
-> During the meeting with your reader you will discuss: 
- > * How effective your last sprint was (each member should talk about what they did)
-	 > 	- Jimmy created the main and character files.
-	 > 	- Brandon is in the process of creating attack, block, and heal actions.
-	 > 	- Austin and Zain are working together to create the move interface/class.
- > * Any tasks that did not get completed last sprint, and how you took them into consideration for this sprint
-	 > 	- Last sprint we were focusing more on breaking down the project into smaller pieces and thinking about how to design/code it well. This sprint we built off the simplifications we made and started implementing into actual code.
- > * Any bugs you've identified and created issues for during the sprint. Do you plan on fixing them in the next sprint or are they lower priority?
-	 > 	- We haven't ran into many issues just yet considering our focus was directed more towards the pre-design aspect.
- > * What tasks you are planning for this next sprint.
-	 > 	- Bring together and integrate all the classes.
+We will use Strategy Pattern so we can have one main class where we call other functions to create the flow of the game. By utilizing Strategy Pattern, we are able to modify individuals functions (attack, heal, and blocking) to do different things when it's called by main.
+-We picked the Strategy design pattern to make our lives easier in the long run. We have strategies and want to be able to implement them easily without extending our program.
+ -Strategy (behavioral) design pattern - We don't actually have to write out multiple functions, we can just write multiple classes to change the behavior and add different moves if necessary (as just a class). If we change any of the methods, we dont have to recomiple the entire program, just that one class.
 
  
  > ## Final deliverable
