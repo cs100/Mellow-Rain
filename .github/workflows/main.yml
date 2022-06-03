@@ -25,7 +25,8 @@ jobs:
           submodules: recursive
 
       # Runs a set of commands using the runners shell
-      - name: Test Rectangle Class
+      - name: Run tests
         run: |
           cmake .
           make
+          ./test
