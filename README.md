@@ -64,13 +64,14 @@ Strategy Pattern
  > * Make sure your README file and Project board are up-to-date reflecting the current status of your project (e.g. any changes that you have made during the project such as changes to your class diagram). Previous versions should still be visible through your commit history. 
  
  ## Screenshots
- > Screenshots of the input/output after running your application
   ![p1](https://cdn.discordapp.com/attachments/961506732679503932/982116806653267988/1.JPG)
   ![p2](https://cdn.discordapp.com/attachments/961506732679503932/982116806875561994/2.JPG)
   ![p3](https://cdn.discordapp.com/attachments/961506732679503932/982116807156572170/3.JPG)
   ![p4](https://cdn.discordapp.com/attachments/961506732679503932/982116807450189824/4.JPG)
  ## Installation/Usage
- > Instructions on installing and running your application
+To run the game, clone the repository and compile with Cmake3 ., make, then ./CS100_PROJECT.
+To play the game, you'll first have to input a name and an appropriate age. Afterwards you choose moves to either attack, block, or heal to defeat 3 bosses. If you want to give up mid game, you can press 0 to give up.
+
  ## Testing
  > How was your project tested/validated? If you used CI, you should have a "build passing" badge in this README.
  
