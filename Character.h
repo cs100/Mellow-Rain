@@ -26,6 +26,10 @@ public:
     void attack(Character* defender);
     void setHeal(Heal* _heal);
     void heal(void);
+    void block(void);
+    bool isBlocking(void);
+    void setBlockingDamage(double _blockingDamage);
+    double getBlockingDamage(void);
 private:
     string name;
     int age;
@@ -33,6 +37,8 @@ private:
     double maxHealth;
     Attack* attackObject;
     Heal* healObject;
+    bool blocking = false;
+    double blockingDamage = 0.8;
 };
 
 
