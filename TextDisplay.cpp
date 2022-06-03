@@ -62,7 +62,7 @@ void TextDisplay::BeginGameTxt() {
     cout << "-------------------" << "\n";
 
     cout << "When you are in a battle against an enemy, you can input 1 of 5 numbers as choices for your next move:" << "\n";
-    PrintMenu();
+    PrintMenu(true);
     cout << endl;
     cout << "-------------------" << "\n";
     cout << "lets show your stats by typing 4 as your input" << "\n";
@@ -76,6 +76,12 @@ void TextDisplay::BeginGameTxt() {
         cout << "Health/MaxHealth: " << person->getHealth() << "/" << person->getMaxHealth() << "\n" << "\n";
 	cout << "-------------------" << "\n";    
     }
+    do {
+        cout << "lets show your stats by typing 4 as your input" << "\n";
+        cin >> chVal;
+    } while(chVal != 4);
+
+    person->showStats();
 
     cout << "These are your character stats that you start with." << "\n";
     cout << "You can progressively make your character stronger by winning your battles to increase your health and attack." << "\n";
@@ -207,16 +213,20 @@ bool TextDisplay::PlayerIsAlive(void) {
 
 void TextDisplay::PrintMenu(void) {
     cout << "-------------------" << "\n";
+void TextDisplay::PrintMenu(bool showStats) {
     cout << "0: Quit" << endl;
     cout << "1: Attack" << endl;
     cout << "2: Block" << endl;
     cout << "3: Heal" << endl;
     cout << "4: Show stats" << endl;
     cout << "-------------------" << "\n";
+    if(showStats) {
+        cout << "4: Show stats" << endl;
+    }
 }
 
-int TextDisplay::GetPlayerMove(void) {
-    PrintMenu();
+int TextDisplay::GetPlayerMove(bool showStats) {
+    PrintMenu(showStats);
     int choice;
     cin >> choice;
     return choice;
@@ -232,27 +242,28 @@ void TextDisplay::FightSequence(void) {
 
 void TextDisplay::Turn(bool playerTurn) {
     if(playerTurn) {
-        PlayerTurn();
+        PlayerTurn(true);
     } else {
         BossTurn();
     }
 }
 
-void TextDisplay::PlayerTurn(void) {
-    int choice = GetPlayerMove();
+void TextDisplay::PlayerTurn(bool showStats) {
+    int choice = GetPlayerMove(showStats);
     if(choice == 0) {
         person->decreaseHealth(person->getMaxHealth()+1);
     } else if(choice == 1) {
         person->attack(boss);
     } else if(choice == 2) {
-        //  BLOCK
+        person->block();
     } else if(choice == 3) {
         person->heal();
     } else if(choice == 4) {
-        //  SHOW STATS
+        person->showStats();
+        PlayerTurn(false);
     } else {
         cout << "Invalid move choice, please choose again" << endl;
-        PlayerTurn();
+        PlayerTurn(true);
     }
 }
 

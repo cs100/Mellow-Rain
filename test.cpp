@@ -73,6 +73,33 @@ TEST(healTests, healValue) {
 	EXPECT_DOUBLE_EQ(Test.getHealth(), 100.0);
 }
 
+TEST(blockTests, isBlockingTest) {
+	Character Test("Test", 25, 100.0);
+	EXPECT_FALSE(Test.isBlocking());
+	Test.block();
+	EXPECT_TRUE(Test.isBlocking());
+}
+
+TEST(blockTests, blockValue) {
+	Character Test("Test", 25, 100.0);
+	Test.setBlockingDamage(0.5);
+	Test.block();
+	EXPECT_TRUE(Test.isBlocking());
+	Test.decreaseHealth(20);
+	EXPECT_DOUBLE_EQ(Test.getHealth(),90.0);
+}
+
+TEST(blockTests, blockWithAttack) {
+	Character Defender("Defender", 25, 100.0);
+	Character Attacker("Attacker", 25, 100.0);
+	Defender.setBlockingDamage(0.5);
+	Defender.block();
+	Attacker.setAttack(new AttackValue(20.0));
+	Attacker.attack(&Defender);
+	EXPECT_DOUBLE_EQ(Defender.getHealth(), 90.0);
+	EXPECT_FALSE(Defender.isBlocking());
+}
+
 int main(int argc, char** argv) {
 	::testing::InitGoogleTest(&argc, argv);
 	return RUN_ALL_TESTS();

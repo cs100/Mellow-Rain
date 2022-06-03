@@ -11,6 +11,7 @@ class HealRange : public Heal {
 	public:
 		HealRange(double _minHeal, double _maxHeal) : minHeal(_minHeal), maxHeal(_maxHeal) {};
 		void execute(Character* healer);
+		void showStats(void);
 };
 
 #endif //HEAL_RANGE_HPP
