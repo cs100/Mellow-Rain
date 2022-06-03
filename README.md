@@ -36,36 +36,18 @@ More in-depth
 Ideas:
 Character
 Class/Attributes
-Inventory (vector of items)
-different types of characters
 Enemies
 
 Actions
 ->Attack
 ->Block (if there’s time)
-			->Guard reduce 25% but u can do action as well?
 				->Don’t want to do 100% damage education because that would just make it so you can just defend 24/7
 				->Don’t want to do just damage education because you’ll just want to attack no matter what then
-				->Can resolve by making defense stack just like a pokemon battle?
 ->Heal
 ->Run
 
 
 
-	->Modified damage taken based on what the enemy’s attribute is
-		**Element Game is fire vs water
-		->Element game lost
- damage taken = base damage - armorType(%) + element (10% flat)
-->Element game won
-damage taken = base damage - armorType(%) = element (10% flat)
-
-Leather (10% damage reduction)
-Copper (15% damage reduction)
-Steel (20% damage reduction)
-Titanium (25% damage reduction)
-
-Each person will choose a class to start off with (left side of UML) and each person will have their inventory which can access items such as healing, armor, and weapons (right side of UML). Each class will have their own unique stats along side different items having different stats such as how much it heals for healing items, durability and resistance for armor, and damage for weapons.
- 
  ## Phase III
  ## Design Pattern: 
 Strategy Pattern
