@@ -103,13 +103,13 @@ We will use Strategy Pattern in our "Decision making" class. Character will be a
 
  > You will need to schedule a check-in for the second scrum meeting with the same reader you had your first scrum meeting with (using Calendly). Your entire team must be present. This meeting will occur on week 8 during lab time.
  > * Before the meeting you should perform a sprint plan like you did in Phase II.
- > * You should also update this README file by adding the following:
- >   * What design pattern(s) did you use? For each pattern you must explain in 4-5 sentences:
- >   	 * How did you pick this pattern? And what feature did you implement with it?
- >  		-We picked the Strategy design pattern to make our lives easier in the long run. We have strategies and want to be able to implement them easily without extending our program.
- >  	 * How did the design pattern help you write better code?
- >		-Strategy (behavioral) design pattern - We don't actually have to write out multiple functions, we can just write multiple classes to change the behavior and add different moves if necessary (as just a class). If we change any of the methods, we dont have to recomiple the entire program, just that one class.
- >     
+  * You should also update this README file by adding the following:
+    * What design pattern(s) did you use? For each pattern you must explain in 4-5 sentences:
+    	 How did you pick this pattern? And what feature did you implement with it?
+   		-We picked the Strategy design pattern to make our lives easier in the long run. We have strategies and want to be able to implement them easily without extending our program.
+   	 How did the design pattern help you write better code?
+ 		-Strategy (behavioral) design pattern - We don't actually have to write out multiple functions, we can just write multiple classes to change the behavior and add different moves if necessary (as just a class). If we change any of the methods, we dont have to recomiple the entire program, just that one class.
+ 
  >   * An updated class diagram that reflects the design pattern(s) you used. You may combine multiple design patterns into one diagram if you'd like, but it needs to be clear which portion of the diagram represents which design pattern (either in the diagram or in the description).
  >   * Make sure your README file (and Project board) are up-to-date reflecting the current status of your project. Previous versions of the README file should still be visible through your commit history.
 > 
