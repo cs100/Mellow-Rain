@@ -6,7 +6,7 @@
 
 ## Project Description
  > Our group project is a text-based RPG game that utilizes only text to interact with the game with no visuals. Our game is called "Mellow Rain" and you are fighting three bosses that get progressively harder. You will have to either attack, guard, or heal to slowly beat all three bosses or give up if odds were against you.
- > This project is interesting for us because we all have interest in video games and played through turn based games at least once in our life. By being able to create a project in creating our own text-based RPG game, we're interested in learning how the inside and behind the stage concept for how these games are planned and executed and what hidden problems and situations we might encounter and resolve through creating our own version.
+This project is interesting for us because we all have interest in video games and played through turn based games at least once in our life. By being able to create a project in creating our own text-based RPG game, we're interested in learning how the inside and behind the stage concept for how these games are planned and executed and what hidden problems and situations we might encounter and resolve through creating our own version.
  > The project will be put together in the programming language of C++ utilizing the strategy pattern.
  > The input for our projects will be user's decisions on what ability/move they want to utilize per turn while our output will be a text summary of what the aftermath of the user's input resulted in in addtion to boss's attack summary.
 
