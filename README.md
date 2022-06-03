@@ -99,7 +99,7 @@ Each person will choose a class to start off with (left side of UML) and each pe
  ## Phase III
  ## Design Pattern: 
 Strategy Pattern
-We will use Strategy Pattern so we can have one main class where we call other functions to create the flow of the game. By utilizing Strategy Pattern, we are able to modify individuals functions (attack, heal, and blocking) to do different things when it's called by main.
+>We will use Strategy Pattern so we can have one main class where we call other functions to create the flow of the game. By utilizing Strategy Pattern, we are able to modify individuals functions (attack, heal, and blocking) to do different things when it's called by main.
 -We picked the Strategy design pattern to make our lives easier in the long run. We have strategies and want to be able to implement them easily without extending our program.
  -Strategy (behavioral) design pattern - We don't actually have to write out multiple functions, we can just write multiple classes to change the behavior and add different moves if necessary (as just a class). If we change any of the methods, we dont have to recomiple the entire program, just that one class.
 
