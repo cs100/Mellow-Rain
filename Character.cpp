@@ -118,3 +118,17 @@ void Character::setBlockingDamage(double _blockingDamage) {
 double Character::getBlockingDamage(void) {
     return blockingDamage;
 }
+
+void Character::showStats(void) {
+    cout << "\t\t" << name << " Stats" << endl;
+    cout << "Age: " << age << endl;
+    cout << "Health: " << health << endl;
+    cout << "MaxHealth: " << maxHealth << endl;
+    cout << "Blocking Damage: " << blockingDamage << endl;
+    if(attackObject != nullptr) {
+        attackObject->showStats();
+    }
+    if(healObject != nullptr) {
+        healObject->showStats();
+    }
+}

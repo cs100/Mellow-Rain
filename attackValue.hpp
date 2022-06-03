@@ -9,6 +9,7 @@ class AttackValue : public Attack {
 	public:
 		AttackValue(double _attackValue) : attackValue(_attackValue) {};
 		void execute(Character* defender);
+		void showStats(void);
 };
 
 #endif //ATTACK_VALUE_HPP

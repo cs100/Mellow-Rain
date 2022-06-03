@@ -20,11 +20,11 @@ public:
 private:
     bool BossIsAlive(void);
     bool PlayerIsAlive(void);
-    void PrintMenu(void);
-    int GetPlayerMove(void);
+    void PrintMenu(bool showStats);
+    int GetPlayerMove(bool showStats);
     void FightSequence(void);
     void Turn(bool playerTurn);
-    void PlayerTurn(void);
+    void PlayerTurn(bool showStats);
     void BossTurn(void);
 	Character* boss = nullptr;
     Character* person = nullptr;
