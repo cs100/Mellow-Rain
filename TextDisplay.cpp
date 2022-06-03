@@ -166,7 +166,6 @@ void TextDisplay::PrintMenu(bool showStats) {
 }
 
 int TextDisplay::GetPlayerMove(bool showStats) {
-    cout << "GETMOVE WITH " << ((showStats)?("TRUE"):("FALSE")) << endl;
     PrintMenu(showStats);
     int choice;
     cin >> choice;
