@@ -15,8 +15,7 @@ public:
     void BeginGameTxt();
     void FirstBoss();
     void SecondBoss();
-    void FinalBoss();;
-    void MenuChoice(int chVal);
+    void FinalBoss();
 private:
     bool BossIsAlive(void);
     bool PlayerIsAlive(void);

@@ -166,43 +166,6 @@ void TextDisplay::FinalBoss() {
     }
 }
 
-void TextDisplay::MenuChoice(int chVal) {
-    if (chVal == 0) {
-	cout << "------------------" << "\n";
-	cout << "You chose to quit the game" << "\n";
-	cout << "Thank you for playing Mellow Rain!";
-	cout << "------------------" << "\n";
-    }
-    else{
-        while (chVal != 0) {
-            if (chVal == 1) {
-		// attack
-
-            }
-            else if (chVal == 2) {
-		// block
-
-            }
-            else if (chVal == 3) {
-		// heal
-
-            }
-            else if (chVal == 4) {
-		// show stats
-
-            }
-        }
-    }
-/*
-    else if (chVal == 0) {
-	cout << "-------------------" << "\n";
-        cout << "You chose to quit the Game" << "\n";
-        cout << "Thank you for playing Mellow Rain!";
-	cout << "-------------------" << "\n";
-    }
-*/
-}
-
 bool TextDisplay::BossIsAlive(void) {
     return (boss!=nullptr)&&(boss->isAlive());
 }
