@@ -19,14 +19,19 @@ This project is interesting for us because we all have interest in video games a
 
 ## Class Description
 As a player, I want to choose a character so I can play as them throughout the game.
+
 As a player, I want to be given a list of 4 character options to pick from and play as throughout the game.
-.
+
 As a player, I want to access my inventory to arrange my items.
+
 As a player, I want to be able to see the items in my inventory.
+
 As a player, I want to be able to interact with the items in my inventory.
+
 As a player, I want to be able to move items around in my inventory.
 
 As a player, I want to equip armor so I can defend myself.
+
 As a player, I want to be able to compare armor statistics so I can choose which armor to pick.
 
 As a player, I want to use a healing item so I can have more health.
