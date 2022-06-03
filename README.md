@@ -32,6 +32,17 @@ As a player, I want to be given an option to block an attack so I can avoid dama
 
 As a player, I want to be given the option to run away so I can quit the game.
 
+The TextDisplay class functions as the main entry point into the game.  It initializes the character with the name input by the user and has the logic to progress through the boss states iteratively taking turns between the boss and the user.  The TextDisplay has two internal pointers to Character objects - one for the boss and one for the player.
+
+The Character class functions to keep all methods for an individual character together.  It keeps track of max health, current health, attack and heal objects and other stats associated with the class.  It also functions as the method to display the character stats.
+
+The health class acts as a common interface for all concrete healing classes.  These classes include healRange (which heals the player for a value within a range) and healValue (which heals for a specific value) - both of which inherit from the heal interface.  Right now, heal objects are set by the TextDisplay class at runtime, but it might be more useful in the future to have them associated with individual items in an inventory system.
+
+The attack class functions similarly to the health class in that it is a common interface for all attacking classes.  These classes include AttackRange (which acts similarly to the healRange class) and attackValue (which acts similarly to the healValue class).
+
+The character class aggregates heal and attack classes while the textdisplay aggregates the character class.
+
+
 More in-depth
 Ideas:
 Character
