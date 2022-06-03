@@ -1,8 +1,6 @@
 cmake_minimum_required(VERSION 3.17)
 project(CS100_Project)
 
-set(CMAKE_CXX_STANDARD 23)
-
 add_subdirectory(googletest)
 
 add_executable(CS100_Project main.cpp Character.cpp Character.h attack.hpp attackRange.hpp attackRange.cpp attackValue.hpp attackValue.cpp heal.hpp healRange.hpp healRange.cpp healValue.hpp healValue.cpp TextDisplay.hpp TextDisplay.cpp)
