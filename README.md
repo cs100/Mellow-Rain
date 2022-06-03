@@ -36,36 +36,18 @@ More in-depth
 Ideas:
 Character
 Class/Attributes
-Inventory (vector of items)
-different types of characters
 Enemies
 
 Actions
 ->Attack
 ->Block (if there’s time)
-			->Guard reduce 25% but u can do action as well?
 				->Don’t want to do 100% damage education because that would just make it so you can just defend 24/7
 				->Don’t want to do just damage education because you’ll just want to attack no matter what then
-				->Can resolve by making defense stack just like a pokemon battle?
 ->Heal
 ->Run
 
 
 
-	->Modified damage taken based on what the enemy’s attribute is
-		**Element Game is fire vs water
-		->Element game lost
- damage taken = base damage - armorType(%) + element (10% flat)
-->Element game won
-damage taken = base damage - armorType(%) = element (10% flat)
-
-Leather (10% damage reduction)
-Copper (15% damage reduction)
-Steel (20% damage reduction)
-Titanium (25% damage reduction)
-
-Each person will choose a class to start off with (left side of UML) and each person will have their inventory which can access items such as healing, armor, and weapons (right side of UML). Each class will have their own unique stats along side different items having different stats such as how much it heals for healing items, durability and resistance for armor, and damage for weapons.
- 
  ## Phase III
  ## Design Pattern: 
 Strategy Pattern
@@ -82,9 +64,14 @@ Strategy Pattern
  > * Make sure your README file and Project board are up-to-date reflecting the current status of your project (e.g. any changes that you have made during the project such as changes to your class diagram). Previous versions should still be visible through your commit history. 
  
  ## Screenshots
- > Screenshots of the input/output after running your application
+  ![p1](https://cdn.discordapp.com/attachments/961506732679503932/982116806653267988/1.JPG)
+  ![p2](https://cdn.discordapp.com/attachments/961506732679503932/982116806875561994/2.JPG)
+  ![p3](https://cdn.discordapp.com/attachments/961506732679503932/982116807156572170/3.JPG)
+  ![p4](https://cdn.discordapp.com/attachments/961506732679503932/982116807450189824/4.JPG)
  ## Installation/Usage
- > Instructions on installing and running your application
+To run the game, clone the repository and compile with Cmake3 ., make, then ./CS100_PROJECT.
+To play the game, you'll first have to input a name and an appropriate age. Afterwards you choose moves to either attack, block, or heal to defeat 3 bosses. If you want to give up mid game, you can press 0 to give up.
+
  ## Testing
- > How was your project tested/validated? If you used CI, you should have a "build passing" badge in this README.
+Testing was done using the google test framework to establish proper functionality of the main classes and their interaction with eachother.  Continuous Integration was not used, as professor Reem indicated that it might not work properly given that this is a CS100 github associated with the school github.
  
