@@ -64,20 +64,11 @@ void TextDisplay::BeginGameTxt() {
     cout << "When you are in a battle against an enemy, you can input 1 of 5 numbers as choices for your next move:" << "\n";
     PrintMenu(true);
     cout << endl;
-    cout << "-------------------" << "\n";
-    cout << "lets show your stats by typing 4 as your input" << "\n";
-    cout << "-------------------" << "\n";
-    cin >> chVal;
 
-    if (chVal == 4) {
-	cout << "-------------------" << "\n";
-        cout << "Name: " << person->getName() << "\n";
-        cout << "Age: " << person->getAge() << "\n";
-        cout << "Health/MaxHealth: " << person->getHealth() << "/" << person->getMaxHealth() << "\n" << "\n";
-	cout << "-------------------" << "\n";    
-    }
     do {
+        cout << "-------------------" << "\n";
         cout << "lets show your stats by typing 4 as your input" << "\n";
+        cout << "-------------------" << "\n";
         cin >> chVal;
     } while(chVal != 4);
 
