@@ -174,9 +174,8 @@ bool TextDisplay::PlayerIsAlive(void) {
     return (person!=nullptr)&&(person->isAlive());
 }
 
-void TextDisplay::PrintMenu(void) {
-    cout << "-------------------" << "\n";
 void TextDisplay::PrintMenu(bool showStats) {
+    cout << "-------------------" << "\n";
     cout << "0: Quit" << endl;
     cout << "1: Attack" << endl;
     cout << "2: Block" << endl;
