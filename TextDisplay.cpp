@@ -24,18 +24,24 @@ void TextDisplay::BeginGameTxt() {
     int age = 0;
     int chVal;
 
+    cout << "-------------------" << "\n" ;
     cout << "Type your userName: ";
     cin >>  name;
     cout << "\n";
 
+    cout << "-------------------" << "\n";
     cout << "Type your Age (between 18-60): ";
     cin >> age;
 
-    while (age < 18 || age > 60) {
-        cout << "\n";
-        cout << "Error:Age not in Range." << "\n";
-        cout << "choose an age between 18-60: " << "\n";
-        cin >> age;
+    while(age < 18 || age > 60){
+ 	   if (age < 18 || age > 60) {
+       		cout << "\n";
+		cout << "-------------------" << "\n";
+       		cout << "Error:Age not in Range." << "\n";
+       		cout << "choose an age between 18-60: " << "\n";
+        	cout << "-------------------" << "\n";
+		cin >> age;
+    	   }
     }
 
     cout << "\n";
@@ -44,6 +50,8 @@ void TextDisplay::BeginGameTxt() {
     person->setAttack(new AttackRange(20.0,40.0));
     person->setHeal(new HealRange(20.0,30.0));
 
+    cout << "-------------------" << "\n";
+ 
     cout << "welcome " << person->getName() << " who's " << person->getAge() << " years old!" << "\n" << "\n";
 
     cout << "Oh no, an enemy has spotted you!!" << "\n";
@@ -51,35 +59,52 @@ void TextDisplay::BeginGameTxt() {
 
     cout << "(" << person->getName() << " has moved to position to fight)" << "\n" << "\n";
 
+    cout << "-------------------" << "\n";
+
     cout << "When you are in a battle against an enemy, you can input 1 of 5 numbers as choices for your next move:" << "\n";
     PrintMenu();
     cout << endl;
+    cout << "-------------------" << "\n";
     cout << "lets show your stats by typing 4 as your input" << "\n";
+    cout << "-------------------" << "\n";
     cin >> chVal;
 
     if (chVal == 4) {
+	cout << "-------------------" << "\n";
         cout << "Name: " << person->getName() << "\n";
         cout << "Age: " << person->getAge() << "\n";
         cout << "Health/MaxHealth: " << person->getHealth() << "/" << person->getMaxHealth() << "\n" << "\n";
+	cout << "-------------------" << "\n";    
     }
 
     cout << "These are your character stats that you start with." << "\n";
     cout << "You can progressively make your character stronger by winning your battles to increase your health and attack." << "\n";
 
+    cout << "-------------------" << "\n";
+
     FirstBoss();
 }
 
 void TextDisplay::FirstBoss() {
-    cout << "STARTING FIRST BOSS" << endl;
+    cout << "-------------------" << "\n";
+    cout << "STARTING FIRST BOSS" << "\n";
+    cout << "BOB HAS APPEARED" << "\n";
+    cout << "Quick, choose a move!" << endl;
+    cout << "-------------------" << "\n";
+
     boss = new Character("BOSS 1 NAME", 60, 200.0);
     boss->setAttack(new AttackValue(10));
     boss->setHeal(new HealValue(10));
     FightSequence();
     if(!PlayerIsAlive()) {
+	cout << "-------------------" << "\n";	
         cout << "DIED TO FIRST BOSS" << endl;
+	cout << "-------------------" << "\n";
         //  PLAYER DEAD MESSAGE
     } else {
+	cout << "-------------------" << "\n";
         cout << "BEAT FIRST BOSS" << endl;
+	cout << "-------------------" << "\n";
         //  VICTORY MESSAGE
         person->setAttack(new AttackRange(15,45));
         person->setHeal(new HealRange(25,35));
@@ -89,17 +114,23 @@ void TextDisplay::FirstBoss() {
 };
 
 void TextDisplay::SecondBoss() {
-    cout << "STARTING SECOND BOSS" << endl;
+    cout << "-------------------" << "\n";
+    cout << "STARTING SECOND BOSS" << "\n";
+    cout << "ROSS HAS APPEARED" << endl;
     boss = new Character("BOSS 2 NAME", 40, 300.0);
     boss->setAttack(new AttackRange(10,20));
     boss->setHeal(new HealRange(10,20));
     FightSequence();
     if(!PlayerIsAlive()) {
+	cout << "-------------------" << "\n";
         cout << "DIED TO SECOND BOSS" << endl;
+	cout << "-------------------" << "\n";
         //  PLAYER DEAD MESSAGE
     } else {
+	cout << "-------------------" << "\n";
         cout << "BEAT SECOND BOSS" << endl;
-        //  VICTORY MESSAGE
+	cout << "-------------------" << "\n";        
+	//  VICTORY MESSAGE
         person->setAttack(new AttackRange(20,50));
         person->setHeal(new HealRange(25,30));
         person->increaseHealth(person->getMaxHealth());
@@ -108,16 +139,23 @@ void TextDisplay::SecondBoss() {
 };
 
 void TextDisplay::FinalBoss() {
-    cout << "STARTING FINAL BOSS" << endl;
+    cout << "-------------------" << "\n";
+    cout << "STARTING FINAL BOSS" << "\n";
+    cout << "BOB ROSS HAS APPEARED" << "\n";
+    cout << "-------------------" << "\n";
     boss = new Character("FINAL BOSS NAME", 30, 500);
     boss->setAttack(new AttackRange(10,30));
     boss->setHeal(new HealRange(30,50));
     FightSequence();
     if(!PlayerIsAlive()) {
+	cout << "-------------------" << "\n";
         cout << "DIED TO FINAL BOSS" << endl;
+	cout << "-------------------" << "\n";
         //  PLAYER DEAD MESSAGE
     } else {
+	cout << "-------------------" << "\n";
         cout << "BEAT FINAL BOSS" << endl;
+	cout << "-------------------" << "\n";
         //  VICTORY MESSAGE 
     }
 }
@@ -144,8 +182,10 @@ void TextDisplay::MenuChoice(int chVal) {
         }
     }
     else if (chVal == 0) {
+	cout << "-------------------" << "\n";
         cout << "You chose to quit the Game" << "\n";
         cout << "Thank you for playing Mellow Rain!";
+	cout << "-------------------" << "\n";
     }
 }
 
@@ -158,11 +198,13 @@ bool TextDisplay::PlayerIsAlive(void) {
 }
 
 void TextDisplay::PrintMenu(void) {
+    cout << "-------------------" << "\n";
     cout << "0: Quit" << endl;
     cout << "1: Attack" << endl;
     cout << "2: Block" << endl;
     cout << "3: Heal" << endl;
     cout << "4: Show stats" << endl;
+    cout << "-------------------" << "\n";
 }
 
 int TextDisplay::GetPlayerMove(void) {
