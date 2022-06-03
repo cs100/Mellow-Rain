@@ -171,11 +171,10 @@ void TextDisplay::PrintMenu(bool showStats) {
     cout << "1: Attack" << endl;
     cout << "2: Block" << endl;
     cout << "3: Heal" << endl;
-    cout << "4: Show stats" << endl;
-    cout << "-------------------" << "\n";
     if(showStats) {
         cout << "4: Show stats" << endl;
     }
+    cout << "-------------------" << "\n";
 }
 
 int TextDisplay::GetPlayerMove(bool showStats) {
