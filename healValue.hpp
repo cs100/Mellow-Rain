@@ -9,6 +9,7 @@ class HealValue : public Heal {
 	public:
 		HealValue(double _healValue) : healValue(_healValue) {};
 		void execute(Character* healer);
+		void showStats(void);
 };
 
 #endif //HEAL_VALUE_HPP

@@ -52,16 +52,14 @@ void TextDisplay::BeginGameTxt() {
     cout << "(" << person->getName() << " has moved to position to fight)" << "\n" << "\n";
 
     cout << "When you are in a battle against an enemy, you can input 1 of 5 numbers as choices for your next move:" << "\n";
-    PrintMenu();
+    PrintMenu(true);
     cout << endl;
-    cout << "lets show your stats by typing 4 as your input" << "\n";
-    cin >> chVal;
+    do {
+        cout << "lets show your stats by typing 4 as your input" << "\n";
+        cin >> chVal;
+    } while(chVal != 4);
 
-    if (chVal == 4) {
-        cout << "Name: " << person->getName() << "\n";
-        cout << "Age: " << person->getAge() << "\n";
-        cout << "Health/MaxHealth: " << person->getHealth() << "/" << person->getMaxHealth() << "\n" << "\n";
-    }
+    person->showStats();
 
     cout << "These are your character stats that you start with." << "\n";
     cout << "You can progressively make your character stronger by winning your battles to increase your health and attack." << "\n";
@@ -157,16 +155,19 @@ bool TextDisplay::PlayerIsAlive(void) {
     return (person!=nullptr)&&(person->isAlive());
 }
 
-void TextDisplay::PrintMenu(void) {
+void TextDisplay::PrintMenu(bool showStats) {
     cout << "0: Quit" << endl;
     cout << "1: Attack" << endl;
     cout << "2: Block" << endl;
     cout << "3: Heal" << endl;
-    cout << "4: Show stats" << endl;
+    if(showStats) {
+        cout << "4: Show stats" << endl;
+    }
 }
 
-int TextDisplay::GetPlayerMove(void) {
-    PrintMenu();
+int TextDisplay::GetPlayerMove(bool showStats) {
+    cout << "GETMOVE WITH " << ((showStats)?("TRUE"):("FALSE")) << endl;
+    PrintMenu(showStats);
     int choice;
     cin >> choice;
     return choice;
@@ -182,14 +183,14 @@ void TextDisplay::FightSequence(void) {
 
 void TextDisplay::Turn(bool playerTurn) {
     if(playerTurn) {
-        PlayerTurn();
+        PlayerTurn(true);
     } else {
         BossTurn();
     }
 }
 
-void TextDisplay::PlayerTurn(void) {
-    int choice = GetPlayerMove();
+void TextDisplay::PlayerTurn(bool showStats) {
+    int choice = GetPlayerMove(showStats);
     if(choice == 0) {
         person->decreaseHealth(person->getMaxHealth()+1);
     } else if(choice == 1) {
@@ -199,10 +200,11 @@ void TextDisplay::PlayerTurn(void) {
     } else if(choice == 3) {
         person->heal();
     } else if(choice == 4) {
-        //  SHOW STATS
+        person->showStats();
+        PlayerTurn(false);
     } else {
         cout << "Invalid move choice, please choose again" << endl;
-        PlayerTurn();
+        PlayerTurn(true);
     }
 }
 

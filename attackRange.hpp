@@ -11,6 +11,7 @@ class AttackRange : public Attack {
 	public:
 		AttackRange(double _minAttack, double _maxAttack) : minAttack(_minAttack), maxAttack(_maxAttack) {};
 		void execute(Character* defender);
+		void showStats(void);
 };
 
 #endif //ATTACK_RANGE_HPP

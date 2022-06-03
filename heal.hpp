@@ -8,6 +8,7 @@ class Character;
 class Heal {
 	public:
 		virtual void execute(Character* toHeal) = 0;
+		virtual void showStats(void) = 0;
 };
 
 #endif // HEAL_HPP
